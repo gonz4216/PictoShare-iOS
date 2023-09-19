@@ -13,8 +13,7 @@ struct Feed: View {
             Color.black
                 .ignoresSafeArea()
             ZStack {
-
-                VStack{
+                VStack {
                     VStack {
                         ZStack {
                             VStack(alignment: .leading) {
@@ -33,9 +32,8 @@ struct Feed: View {
                                         .frame(width: 20, height: 40)
                                         .padding(.leading)
                                     Spacer()
-
                                 }
-                                .padding(.top,20)
+                                .padding(.top, 20)
                                 Spacer()
                             }
                         }
@@ -51,6 +49,7 @@ struct Feed: View {
                             Text("Toronto, Scarborough • 1 hr late")
                                 .foregroundColor(.gray)
                                 .font(.system(size: 12))
+                            ThreeDots(size: 3, color: .gray)
                         }
                     }
                 }

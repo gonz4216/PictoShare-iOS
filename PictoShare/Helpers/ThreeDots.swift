@@ -23,7 +23,6 @@ struct ThreeDots: View {
                 .foregroundColor(color)
                 .font(.system(size: size))
                 .padding(.leading, -4)
-
         }
     }
 }
