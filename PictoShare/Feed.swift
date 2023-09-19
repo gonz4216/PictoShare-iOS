@@ -13,6 +13,48 @@ struct Feed: View {
             Color.black
                 .ignoresSafeArea()
             ZStack {
+
+                VStack{
+                    VStack {
+                        ZStack {
+                            VStack(alignment: .leading) {
+                                Image("back")
+                                    .resizable()
+                                    .scaledToFit()
+                                    .cornerRadius(5)
+                            }
+                            VStack {
+                                HStack {
+                                    Image("front")
+                                        .resizable()
+                                        .scaledToFit()
+                                        .border(.black)
+                                        .cornerRadius(2)
+                                        .frame(width: 20, height: 40)
+                                        .padding(.leading)
+                                    Spacer()
+
+                                }
+                                .padding(.top,20)
+                                Spacer()
+                            }
+                        }
+                        .frame(height: 100)
+                    }
+                    VStack {
+                        Text("Add a caption...")
+                            .fontWeight(.semibold)
+                            .foregroundColor(.white)
+                        Text("View Comment")
+                            .foregroundColor(.gray)
+                        HStack {
+                            Text("Toronto, Scarborough • 1 hr late")
+                                .foregroundColor(.gray)
+                                .font(.system(size: 12))
+                        }
+                    }
+                }
+
                 VStack {
                     VStack {
                         HStack {
