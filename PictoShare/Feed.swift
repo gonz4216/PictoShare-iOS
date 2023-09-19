@@ -15,7 +15,7 @@ struct Feed: View {
             ZStack {
                 VStack {
                     VStack {
-                        HStack(){
+                        HStack {
                             Image(systemName: "person.2.fill")
                                 .foregroundColor(.white)
                             Spacer()
@@ -42,7 +42,6 @@ struct Feed: View {
                 }
             }
         }
-
     }
 }
 

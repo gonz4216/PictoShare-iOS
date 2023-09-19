@@ -14,8 +14,7 @@ struct FeedCell: View {
                 .ignoresSafeArea()
 
             VStack(alignment: .leading) {
-
-                //user name part
+                // user name part
 
                 HStack {
                     Image("pp")
@@ -34,29 +33,27 @@ struct FeedCell: View {
                     }
                 }
                 .padding(.horizontal)
-                //image
+                // image
 
-                ZStack{
-
+                ZStack {
                     VStack {
                         Spacer()
                         HStack {
                             Spacer()
-                            VStack{
+                            VStack {
                                 Image(systemName: "bubble.left.fill")
                                     .foregroundColor(.white)
                                     .font(.system(size: 25))
-                                    .shadow(color: .black, radius: 3,x: 1,y: 1)
+                                    .shadow(color: .black, radius: 3, x: 1, y: 1)
                                 Image(systemName: "face.smiling.fill")
                                     .foregroundColor(.white)
                                     .font(.system(size: 25))
-                                    .shadow(color: .black, radius: 3,x: 1,y: 1)
+                                    .shadow(color: .black, radius: 3, x: 1, y: 1)
                                     .padding(.top, 15)
-                                }
+                            }
                             .padding(.trailing, 20)
                             .padding(.bottom, 50)
-                            }
-
+                        }
                     }
                     .zIndex(1)
 
@@ -65,14 +62,13 @@ struct FeedCell: View {
                             .resizable()
                             .scaledToFit()
                             .cornerRadius(20)
-                        HStack{
+                        HStack {
                             Text("Add a comment...")
                                 .foregroundColor(.gray)
                                 .fontWeight(.semibold)
                                 .padding(.leading, 8)
                             Spacer()
                         }
-
                     }
 
                     VStack {
