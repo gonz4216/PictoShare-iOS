@@ -53,7 +53,7 @@ struct Feed: View {
                                 ThreeDots(size: 3, color: .gray)
                             }
                         }
-                        ForEach(1..<8) {_ in
+                        ForEach(1 ..< 8) { _ in
                             FeedCell()
                         }
                     }
