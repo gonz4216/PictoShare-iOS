@@ -9,7 +9,28 @@ import SwiftUI
 
 struct Profile: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        VStack {
+            ZStack {
+                Color.black
+                    .ignoresSafeArea()
+                VStack {
+                    HStack {
+                        Image(systemName: "arrow.backward")
+                            .foregroundColor(.white)
+                            .font(.system(size: 20))
+                        Spacer()
+
+                        Text("Profile")
+                            .foregroundColor(.white)
+                            .fontWeight(.semibold)
+
+                        Spacer()
+
+                        ThreeDots(size: 4, color: .white)
+                    }
+                }
+            }
+        }
     }
 }
 
