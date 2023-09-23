@@ -28,6 +28,35 @@ struct Profile: View {
 
                         ThreeDots(size: 4, color: .white)
                     }
+                    .padding(.horizontal)
+                    Spacer()
+                }
+
+                VStack {
+                    Image("pp")
+                        .resizable()
+                        .scaledToFit()
+                        .frame(width: 130, height: 130)
+                        .cornerRadius(75)
+                    Text("Ethan")
+                        .foregroundColor(.white)
+                        .font(.system(size: 25))
+                        .fontWeight(.bold)
+                    Text("kojistrat")
+                        .foregroundColor(.white)
+                        .fontWeight(.semibold)
+                    HStack {
+                        Text("Your Memories")
+                            .foregroundColor(.white)
+                            .fontWeight(.semibold)
+                            .font(.system(size: 20))
+
+                        Spacer()
+
+                        HStack {
+                            
+                        }
+                    }
                 }
             }
         }
