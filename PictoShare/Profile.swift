@@ -53,8 +53,35 @@ struct Profile: View {
 
                         Spacer()
 
-                        HStack {
-                            
+                        HStack(spacing: 4) {
+                            Image(systemName: "lock.fill")
+                                .foregroundColor(.gray)
+                                .font(.system(size: 10))
+                            Text("Only visiable to you")
+                                .foregroundColor(.gray)
+                                .font(.system(size: 10))
+                        }
+                        .padding(.horizontal)
+                        .padding(.top, 4)
+
+                    }
+                    VStack {
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 16)
+                                .foregroundColor(Color.white)
+                                .opacity(0.07)
+                                .frame(height: 230)
+
+                            VStack {
+                                HStack {
+                                    Text("Last 14 Days")
+                                        .foregroundColor(.white)
+                                        .font(.system(size: 16))
+                                        .padding(.top,8)
+
+                                    Spacer()
+                                }
+                            }
                         }
                     }
                 }
