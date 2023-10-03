@@ -63,7 +63,6 @@ struct Profile: View {
                         }
                         .padding(.horizontal)
                         .padding(.top, 4)
-
                     }
                     VStack {
                         ZStack {
@@ -77,7 +76,7 @@ struct Profile: View {
                                     Text("Last 14 Days")
                                         .foregroundColor(.white)
                                         .font(.system(size: 16))
-                                        .padding(.top,8)
+                                        .padding(.top, 8)
 
                                     Spacer()
                                 }
@@ -85,17 +84,16 @@ struct Profile: View {
                                 .padding(.leading)
                                 VStack {
                                     HStack(spacing: 4) {
-                                        ForEach(1..<8) { numb in
+                                        ForEach(1 ..< 8) { numb in
                                             MemoryView(days: numb)
                                         }
                                     }
                                     HStack(spacing: 4) {
-                                        ForEach(1..<8) { numb in
+                                        ForEach(1 ..< 8) { numb in
                                             MemoryView(days: numb + 7)
                                         }
                                     }
                                     .padding(.top, -4)
-
                                 }
                                 Text("View all my Memories")
                                     .foregroundColor(.white)
@@ -108,11 +106,9 @@ struct Profile: View {
                                             .opacity(0.5)
                                     }
                                     .padding(.top, 4)
-
                             }
 
                             .padding(.top, -15)
-
                         }
                     }
                     Text("🦄  Berel.al/cesma")

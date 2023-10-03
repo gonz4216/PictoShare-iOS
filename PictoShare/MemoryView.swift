@@ -8,14 +8,11 @@
 import SwiftUI
 
 struct MemoryView: View {
-
     var days: Int
 
     var body: some View {
-
         VStack {
             ZStack {
-
                 Text("\(days)")
                     .foregroundColor(.white)
                     .zIndex(1)
@@ -28,7 +25,6 @@ struct MemoryView: View {
                         RoundedRectangle(cornerRadius: 6)
                             .stroke(.white, lineWidth: 1.5)
                             .frame(width: UIScreen.main.bounds.width / 8, height: 70)
-
                     }
             }
         }
