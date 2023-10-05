@@ -33,33 +33,36 @@ struct Settings: View {
                         Spacer()
                     }
                     VStack {
-                        RoundedRectangle(cornerRadius: 16)
-                            .frame(width: UIScreen.main.bounds.width * 0.9, height: 90)
-                            .foregroundColor(.white)
-                            .opacity(0.07)
-                            .overlay {
-                                HStack {
-                                    Image("pp")
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(width: 60, height: 60)
-                                        .cornerRadius(30)
-                                    VStack(alignment: .leading) {
-                                        Text("Koji")
-                                            .foregroundColor(.white)
-                                            .fontWeight(.semibold)
-                                            .font(.system(size: 18))
-                                        Text("koji strat")
-                                            .foregroundColor(.white)
-                                            .fontWeight(.semibold)
-                                            .font(.system(size: 14))
+                        NavigationLink {} label: {
+                            RoundedRectangle(cornerRadius: 16)
+                                .frame(width: UIScreen.main.bounds.width * 0.9, height: 90)
+                                .foregroundColor(.white)
+                                .opacity(0.07)
+                                .overlay {
+                                    HStack {
+                                        Image("pp")
+                                            .resizable()
+                                            .scaledToFit()
+                                            .frame(width: 60, height: 60)
+                                            .cornerRadius(30)
+                                        VStack(alignment: .leading) {
+                                            Text("Koji")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                                .font(.system(size: 18))
+                                            Text("koji strat")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                                .font(.system(size: 14))
+                                        }
+                                        Spacer()
+                                        Image(systemName: "chevron.right")
+                                            .foregroundColor(.gray)
                                     }
-                                    Spacer()
-                                    Image(systemName: "chevron.right")
-                                        .foregroundColor(.gray)
+                                    .padding(.horizontal, 18)
                                 }
-                                .padding(.horizontal, 18)
-                            }
+                        }
+
                         VStack(spacing: 6) {
                             HStack {
                                 Text("Features")
@@ -91,7 +94,7 @@ struct Settings: View {
                             }
                         }
                         .padding(.top, 12)
-                        VStack(spacing: 6){
+                        VStack(spacing: 6) {
                             HStack {
                                 Text("Settings")
                                     .foregroundColor(.gray)
@@ -106,9 +109,7 @@ struct Settings: View {
                                     .foregroundColor(.white)
                                     .opacity(0.07)
                                 VStack {
-                                    NavigationLink {
-
-                                    } label: {
+                                    NavigationLink {} label: {
                                         HStack {
                                             Image(systemName: "square.and.pencil")
                                                 .foregroundColor(.white)
@@ -130,9 +131,7 @@ struct Settings: View {
                                         .frame(width: width * 0.9, height: 0.3)
                                         .foregroundColor(.gray)
                                         .opacity(0.4)
-                                    NavigationLink {
-
-                                    } label: {
+                                    NavigationLink {} label: {
                                         HStack {
                                             Image(systemName: "globe.europe.africa.fill")
                                                 .foregroundColor(.white)
@@ -155,9 +154,7 @@ struct Settings: View {
                                         .foregroundColor(.gray)
                                         .opacity(0.4)
 
-                                    NavigationLink {
-
-                                    } label: {
+                                    NavigationLink {} label: {
                                         HStack {
                                             Image(systemName: "hammer.circle")
                                                 .foregroundColor(.white)
@@ -174,8 +171,6 @@ struct Settings: View {
                                         .padding(.horizontal, width * 0.1)
                                         .frame(height: 30)
                                     }
-
-
                                 }
                             }
                         }
@@ -192,18 +187,16 @@ struct Settings: View {
                             }
                             ZStack {
                                 RoundedRectangle(cornerRadius: 14)
-                                    .frame(width: width * 0.9, height: 145)
+                                    .frame(width: width * 0.9, height: 190)
                                     .foregroundColor(.white)
                                     .opacity(0.07)
                                 VStack {
-                                    NavigationLink {
-
-                                    } label: {
+                                    NavigationLink {} label: {
                                         HStack {
-                                            Image(systemName: "square.and.pencil")
+                                            Image(systemName: "square.and.arrow.up")
                                                 .foregroundColor(.white)
 
-                                            Text("Notifications")
+                                            Text("Share PictoShare")
                                                 .foregroundColor(.white)
                                                 .fontWeight(.semibold)
                                             Spacer()
@@ -220,14 +213,12 @@ struct Settings: View {
                                         .frame(width: width * 0.9, height: 0.3)
                                         .foregroundColor(.gray)
                                         .opacity(0.4)
-                                    NavigationLink {
-
-                                    } label: {
+                                    NavigationLink {} label: {
                                         HStack {
-                                            Image(systemName: "globe.europe.africa.fill")
+                                            Image(systemName: "star")
                                                 .foregroundColor(.white)
 
-                                            Text("Notifications")
+                                            Text("Rate PictoShare")
                                                 .foregroundColor(.white)
                                                 .fontWeight(.semibold)
                                             Spacer()
@@ -245,14 +236,12 @@ struct Settings: View {
                                         .foregroundColor(.gray)
                                         .opacity(0.4)
 
-                                    NavigationLink {
-
-                                    } label: {
+                                    NavigationLink {} label: {
                                         HStack {
-                                            Image(systemName: "hammer.circle")
+                                            Image(systemName: "lifepreserver")
                                                 .foregroundColor(.white)
 
-                                            Text("Notifications")
+                                            Text("Help")
                                                 .foregroundColor(.white)
                                                 .fontWeight(.semibold)
                                             Spacer()
@@ -264,18 +253,56 @@ struct Settings: View {
                                         .padding(.horizontal, width * 0.1)
                                         .frame(height: 30)
                                     }
+                                    Rectangle()
+                                        .frame(width: width * 0.9, height: 0.3)
+                                        .foregroundColor(.gray)
+                                        .opacity(0.4)
 
+                                    NavigationLink {} label: {
+                                        HStack {
+                                            Image(systemName: "info.circle")
+                                                .foregroundColor(.white)
 
+                                            Text("About")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                            Spacer()
+
+                                            Image("chevron.right")
+                                                .foregroundColor(.gray)
+                                                .font(.system(size: 14))
+                                        }
+                                        .padding(.horizontal, width * 0.1)
+                                        .frame(height: 30)
+                                    }
                                 }
                             }
-
                         }
                         .padding(.top, 12)
 
+                        // LOGOUT
 
+                        ZStack {
+                            RoundedRectangle(cornerRadius: 10)
+                                .frame(width: width * 0.9, height: 45)
+                                .foregroundColor(.white)
+                                .opacity(0.07)
+
+                            HStack {
+                                Spacer()
+                                Text("Log Out")
+                                    .foregroundColor(.red)
+                                Spacer()
+                            }
+                        }
+                        .padding(.top, 12)
+                        Text("Version 0.202 (213) Prod")
+                            .font(.caption)
+                            .foregroundColor(.gray)
                     }
                 }
             }
+            .navigationBarHidden(true)
         }
     }
 }
