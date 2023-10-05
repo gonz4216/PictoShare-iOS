@@ -91,7 +91,7 @@ struct Settings: View {
                             }
                         }
                         .padding(.top, 12)
-                        VStack {
+                        VStack(spacing: 6){
                             HStack {
                                 Text("Settings")
                                     .foregroundColor(.gray)
@@ -134,7 +134,7 @@ struct Settings: View {
 
                                     } label: {
                                         HStack {
-                                            Image(systemName: "global.europe.africa.fill ")
+                                            Image(systemName: "globe.europe.africa.fill")
                                                 .foregroundColor(.white)
 
                                             Text("Notifications")
@@ -154,9 +154,125 @@ struct Settings: View {
                                         .frame(width: width * 0.9, height: 0.3)
                                         .foregroundColor(.gray)
                                         .opacity(0.4)
+
+                                    NavigationLink {
+
+                                    } label: {
+                                        HStack {
+                                            Image(systemName: "hammer.circle")
+                                                .foregroundColor(.white)
+
+                                            Text("Notifications")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                            Spacer()
+
+                                            Image("chevron.right")
+                                                .foregroundColor(.gray)
+                                                .font(.system(size: 14))
+                                        }
+                                        .padding(.horizontal, width * 0.1)
+                                        .frame(height: 30)
+                                    }
+
+
                                 }
                             }
                         }
+                        .padding(.top, 12)
+
+                        VStack(spacing: 6) {
+                            HStack {
+                                Text("About")
+                                    .foregroundColor(.gray)
+                                    .fontWeight(.semibold)
+                                    .font(.system(size: 12))
+                                    .padding(.horizontal, UIScreen.main.bounds.width * 0.05)
+                                Spacer()
+                            }
+                            ZStack {
+                                RoundedRectangle(cornerRadius: 14)
+                                    .frame(width: width * 0.9, height: 145)
+                                    .foregroundColor(.white)
+                                    .opacity(0.07)
+                                VStack {
+                                    NavigationLink {
+
+                                    } label: {
+                                        HStack {
+                                            Image(systemName: "square.and.pencil")
+                                                .foregroundColor(.white)
+
+                                            Text("Notifications")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                            Spacer()
+
+                                            Image("chevron.right")
+                                                .foregroundColor(.gray)
+                                                .font(.system(size: 14))
+                                        }
+                                        .padding(.horizontal, width * 0.1)
+                                        .frame(height: 30)
+                                    }
+
+                                    Rectangle()
+                                        .frame(width: width * 0.9, height: 0.3)
+                                        .foregroundColor(.gray)
+                                        .opacity(0.4)
+                                    NavigationLink {
+
+                                    } label: {
+                                        HStack {
+                                            Image(systemName: "globe.europe.africa.fill")
+                                                .foregroundColor(.white)
+
+                                            Text("Notifications")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                            Spacer()
+
+                                            Image("chevron.right")
+                                                .foregroundColor(.gray)
+                                                .font(.system(size: 14))
+                                        }
+                                        .padding(.horizontal, width * 0.1)
+                                        .frame(height: 30)
+                                    }
+
+                                    Rectangle()
+                                        .frame(width: width * 0.9, height: 0.3)
+                                        .foregroundColor(.gray)
+                                        .opacity(0.4)
+
+                                    NavigationLink {
+
+                                    } label: {
+                                        HStack {
+                                            Image(systemName: "hammer.circle")
+                                                .foregroundColor(.white)
+
+                                            Text("Notifications")
+                                                .foregroundColor(.white)
+                                                .fontWeight(.semibold)
+                                            Spacer()
+
+                                            Image("chevron.right")
+                                                .foregroundColor(.gray)
+                                                .font(.system(size: 14))
+                                        }
+                                        .padding(.horizontal, width * 0.1)
+                                        .frame(height: 30)
+                                    }
+
+
+                                }
+                            }
+
+                        }
+                        .padding(.top, 12)
+
+
                     }
                 }
             }
