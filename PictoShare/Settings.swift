@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-
+    //TODO: Fix arrows and add them, change names as well
 struct Settings: View {
     @State
     var width = UIScreen.main.bounds.width

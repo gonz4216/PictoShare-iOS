@@ -17,6 +17,7 @@
 		9DB6C0192ABEBDC70012AE22 /* Profile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB6C0182ABEBDC70012AE22 /* Profile.swift */; };
 		9DDA8BEB2AC542EB0000EB77 /* MemoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDA8BEA2AC542EB0000EB77 /* MemoryView.swift */; };
 		9DDA8BED2ACB601C0000EB77 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDA8BEC2ACB601C0000EB77 /* Settings.swift */; };
+		9DDA8BEF2AD345110000EB77 /* EditProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DDA8BEE2AD345110000EB77 /* EditProfile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		9DB6C0182ABEBDC70012AE22 /* Profile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Profile.swift; sourceTree = "<group>"; };
 		9DDA8BEA2AC542EB0000EB77 /* MemoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoryView.swift; sourceTree = "<group>"; };
 		9DDA8BEC2ACB601C0000EB77 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		9DDA8BEE2AD345110000EB77 /* EditProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,7 @@
 		9D3C32712AB7B4F900FD8CFB = {
 			isa = PBXGroup;
 			children = (
+				9DDA8BEE2AD345110000EB77 /* EditProfile.swift */,
 				9D3C327C2AB7B4F900FD8CFB /* PictoShare */,
 				9D3C327B2AB7B4F900FD8CFB /* Products */,
 			);
@@ -192,6 +195,7 @@
 				9DB6C0132ABA48130012AE22 /* FeedCell.swift in Sources */,
 				9D3C328C2AB7D65000FD8CFB /* Feed.swift in Sources */,
 				9D3C327E2AB7B4F900FD8CFB /* PictoShareApp.swift in Sources */,
+				9DDA8BEF2AD345110000EB77 /* EditProfile.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
